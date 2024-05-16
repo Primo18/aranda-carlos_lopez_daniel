@@ -3,7 +3,6 @@ package service;
 import dao.iDao;
 import model.Odontologo;
 import org.apache.log4j.Logger;
-
 import java.util.List;
 
 public class OdontologoService {
@@ -16,24 +15,24 @@ public class OdontologoService {
 
     public Odontologo guardarOdontologo(Odontologo odontologo) {
         Odontologo guardado = odontologoIDao.guardar(odontologo);
-        logger.info("Odontólogo guardado: " + guardado);
+//        logger.info("Odontólogo guardado: " + guardado);
         return guardado;
     }
 
     public void eliminarOdontologo(Integer id) {
         odontologoIDao.eliminar(id);
-        logger.info("Odontólogo eliminado con ID: " + id);
+//        logger.info("Odontólogo eliminado con ID: " + id);
     }
 
     public Odontologo buscarOdontologo(Integer id) {
         Odontologo encontrado = odontologoIDao.buscar(id);
-        logger.info("Odontólogo encontrado: " + encontrado);
+//        logger.info("Odontólogo encontrado: " + encontrado);
         return encontrado;
     }
 
     public List<Odontologo> buscarTodos() {
         List<Odontologo> odontologos = odontologoIDao.buscarTodos();
-        logger.info("Lista de todos los odontólogos: " + odontologos);
+//        logger.info("Lista de todos los odontólogos: " + odontologos);
         return odontologos;
     }
 }
