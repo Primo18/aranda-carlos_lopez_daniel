@@ -4,6 +4,7 @@ import model.Odontologo;
 import org.junit.Before;
 import org.junit.Test;
 import service.OdontologoService;
+import dao.OdontologoDaoCollection;
 
 import java.sql.Connection;
 import java.sql.Statement;
@@ -16,7 +17,8 @@ public class OdontologoServiceTest {
 
     @Before
     public void setUp() {
-        odontologoService = new OdontologoService(new OdontologoDaoH2());
+//        odontologoService = new OdontologoService(new OdontologoDaoH2());
+         odontologoService = new OdontologoService(new OdontologoDaoCollection());
         limpiarTablaOdontologos();
     }
 
