@@ -17,8 +17,9 @@ public class OdontologoServiceTest {
 
     @Before
     public void setUp() {
-//        odontologoService = new OdontologoService(new OdontologoDaoH2());
-         odontologoService = new OdontologoService(new OdontologoDaoCollection());
+//        Puedes cambiar la implementación de OdontologoDaoH2 por OdontologoDaoCollection para probar el servicio con una base de datos en memoria.
+        odontologoService = new OdontologoService(new OdontologoDaoH2());
+//         odontologoService = new OdontologoService(new OdontologoDaoCollection());
         limpiarTablaOdontologos();
     }
 

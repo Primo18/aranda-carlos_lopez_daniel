@@ -133,3 +133,13 @@
 [2024-05-15 23:30:38] [ INFO ] [OdontologoDaoCollection:18] Odontólogo guardado: Odontologo{id=1, numeroMatricula='123', nombre='John', apellido='Doe'}
 [2024-05-15 23:30:38] [ INFO ] [OdontologoDaoCollection:18] Odontólogo guardado: Odontologo{id=2, numeroMatricula='456', nombre='Jane', apellido='Smith'}
 [2024-05-15 23:30:38] [ INFO ] [OdontologoDaoCollection:42] Lista de todos los odontólogos: [Odontologo{id=1, numeroMatricula='123', nombre='John', apellido='Doe'}, Odontologo{id=2, numeroMatricula='456', nombre='Jane', apellido='Smith'}]
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:29] Odontólogo guardado: Odontologo{id=28, numeroMatricula='123', nombre='John', apellido='Doe'}
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:37] Conexión a la base de datos cerrada
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:57] Odontólogo encontrado: Odontologo{id=28, numeroMatricula='123', nombre='John', apellido='Doe'}
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:65] Conexión a la base de datos cerrada
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:29] Odontólogo guardado: Odontologo{id=29, numeroMatricula='123', nombre='John', apellido='Doe'}
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:37] Conexión a la base de datos cerrada
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:29] Odontólogo guardado: Odontologo{id=30, numeroMatricula='456', nombre='Jane', apellido='Smith'}
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:37] Conexión a la base de datos cerrada
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:108] Lista de todos los odontólogos: [Odontologo{id=29, numeroMatricula='123', nombre='John', apellido='Doe'}, Odontologo{id=30, numeroMatricula='456', nombre='Jane', apellido='Smith'}]
+[2024-05-15 23:32:43] [ INFO ] [OdontologoDaoH2:115] Conexión a la base de datos cerrada
