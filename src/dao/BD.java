@@ -6,8 +6,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
-
 public class BD {
     private static final Logger logger= Logger.getLogger(BD.class);
 
@@ -39,7 +37,6 @@ public class BD {
             try {
                 if (connection != null) {
                     connection.close();
-                    logger.info("Conexión a la base de datos cerrada");
                 }
             } catch (SQLException e) {
                 logger.error("Error al cerrar la conexión a la base de datos", e);

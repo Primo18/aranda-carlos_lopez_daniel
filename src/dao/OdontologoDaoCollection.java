@@ -32,12 +32,6 @@ public class OdontologoDaoCollection implements iDao<Odontologo> {
     }
 
     @Override
-    public void eliminar(int id) {
-        odontologos.removeIf(odontologo -> odontologo.getId() == id);
-        logger.info("Odontólogo eliminado con ID: " + id);
-    }
-
-    @Override
     public List<Odontologo> buscarTodos() {
         logger.info("Lista de todos los odontólogos: " + odontologos);
         return new ArrayList<>(odontologos);

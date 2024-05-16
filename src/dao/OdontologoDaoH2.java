@@ -34,7 +34,6 @@ public class OdontologoDaoH2 implements iDao<Odontologo> {
             try {
                 if (connection != null) {
                     connection.close();
-                    logger.info("Conexión a la base de datos cerrada");
                 }
             } catch (Exception e) {
                 logger.error("Error al cerrar la conexión a la base de datos", e);
@@ -62,35 +61,12 @@ public class OdontologoDaoH2 implements iDao<Odontologo> {
             try {
                 if (connection != null) {
                     connection.close();
-                    logger.info("Conexión a la base de datos cerrada");
                 }
             } catch (Exception e) {
                 logger.error("Error al cerrar la conexión a la base de datos", e);
             }
         }
         return odontologo;
-    }
-
-    @Override
-    public void eliminar(int id) {
-        Connection connection = bd.getConnection();
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM ODONTOLOGOS WHERE ID = ?");
-            preparedStatement.setInt(1, id);
-            preparedStatement.executeUpdate();
-            logger.info("Odontólogo eliminado con ID: " + id);
-        } catch (Exception e) {
-            logger.error("Error al eliminar el odontólogo", e);
-        } finally {
-            try {
-                if (connection != null) {
-                    connection.close();
-                    logger.info("Conexión a la base de datos cerrada");
-                }
-            } catch (Exception e) {
-                logger.error("Error al cerrar la conexión a la base de datos", e);
-            }
-        }
     }
 
     @Override
@@ -112,7 +88,6 @@ public class OdontologoDaoH2 implements iDao<Odontologo> {
             try {
                 if (connection != null) {
                     connection.close();
-                    logger.info("Conexión a la base de datos cerrada");
                 }
             } catch (Exception e) {
                 logger.error("Error al cerrar la conexión a la base de datos", e);
